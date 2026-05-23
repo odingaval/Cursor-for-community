@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-geist-sans: ui-sans-serif, system-ui, sans-serif;
+  --font-geist-mono: ui-monospace, "Cascadia Code", "Source Code Pro", monospace;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: #0a0c10;
+  font-family: var(--font-geist-sans);
+}
+
+/* Markdown in AI panel */
+.prose pre {
+  @apply bg-black/40 rounded-lg p-3 overflow-x-auto text-xs;
+}
+
+.prose code {
+  @apply text-accent/90;
+}
+
+.prose p {
+  @apply my-2;
+}
+
+.prose ul {
+  @apply list-disc pl-4 my-2;
+}
